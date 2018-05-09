@@ -43,8 +43,14 @@ class Translate
 
   def eng_to_morse(english)
     english_array = english.chars
-    morse_array = @dictionary.values_at(english_array)
-binding.pry
+    english_hash =  Hash[english_array.collect { |item| [item, ""] } ]
+    translated_hash = english_hash.merge(@dictionary)
+    morse_code_array = translated_hash.values
+    morse_code = morse_code_array.join
+    morse_code
+
+    binding.pry
+
 
   end
 end
