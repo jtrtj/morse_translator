@@ -1,4 +1,5 @@
-class Translator
+require 'pry'
+class Translate
 
   def initialize
     @dictionary = {"a" => ".-",
@@ -38,5 +39,12 @@ class Translator
                     "9" => "----.",
                     "0" => "-----",
                     " " => " "}
+  end
+
+  def eng_to_morse(english)
+    english_array = english.chars
+    morse_array = @dictionary.values_at(english_array)
+binding.pry
+
   end
 end
