@@ -1,4 +1,6 @@
-# morse_translator
+_Part of the curriculmn at Turing:_
+
+## morse_translator
 Shell repo for B1 exercise
 
 On GitHub
